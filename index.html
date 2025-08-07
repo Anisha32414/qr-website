@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake Dramatic Demo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Share Tech Mono', monospace;
+      background: linear-gradient(160deg, #000000, #1a0000);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .demo-warning {
+      background-color: #003300;
+      color: #00ff00;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      box-shadow: 0 0 20px #00ff00;
+      animation: blink 2s infinite alternate;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+
+    header {
+      background-color: maroon;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 32px;
+      box-shadow: 0 0 10px red;
+    }
+
+    nav {
+      background-color: #330000;
+      overflow: hidden;
+      border-bottom: 2px solid red;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #ff9999;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #660000;
+      color: white;
+    }
+
+    .content {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .scammed {
+      font-size: 120px;
+      font-weight: bold;
+      color: red;
+      text-shadow: 0 0 10px red, 0 0 30px darkred;
+      animation: flicker 0.3s infinite;
+      margin-top: 30px;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; transform: scaleX(1); }
+      50% { opacity: 0.7; transform: scaleX(1.02); }
+      100% { opacity: 1; transform: scaleX(1); }
+    }
+
+    .warning-msg {
+      font-size: 22px;
+      color: #ff3333;
+      margin-top: 40px;
+      font-style: italic;
+      animation: shake 0.8s infinite alternate;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-3px); }
+      50% { transform: translateX(3px); }
+      75% { transform: translateX(-3px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo-warning">
+    ⚠️ This is just a demo website and it is SAFE ⚠️
+  </div>
+
+  <header>
+    <h1>Welcome to Our Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Contact Us</a>
+    <a href="#">About Us</a>
+    <a href="#">Feedback</a>
+    <a href="#">Library</a>
+    <a href="#">Trash</a>
+  </nav>
+
+  <div class="content">
+    <div class="scammed">SCAMMED</div>
+    <div class="warning-msg">This website is suspicious. You have been warned.</div>
+  </div>
+
+</body>
+</html>
